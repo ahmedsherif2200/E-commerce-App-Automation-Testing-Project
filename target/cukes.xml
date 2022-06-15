@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="236.898">
+<testcase classname="User could register with valid data" name="User register with valid data" time="18.577">
+<system-out><![CDATA[Given Click on Register tab.................................................passed
+When Click on any radio button to chose gender..............................passed
+And User enter First name and Last name.....................................passed
+And User Select Date of Birth: Select [Day, Month, Year]....................passed
+And User enter email: "Ahmedsherif@test.com"................................passed
+And Fill Company name.......................................................passed
+And User enter Password and Confirm it: "P@ssw0rd"..........................passed
+And Click on REGISTER button................................................passed
+Then User could register successfully.......................................passed
+And Click on CONTINUE button................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could login with credentials" name="User login with valid credentials" time="14.724">
+<system-out><![CDATA[Given Click on Login tab....................................................passed
+When User enter "Ahmedsherif@test.com" and "P@ssw0rd".......................passed
+And Click on login button...................................................passed
+Then User could login successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could login with credentials" name="User login with invalid credentials" time="13.222">
+<system-out><![CDATA[Given Click on Login tab....................................................passed
+When User enter "invalid@test.com" and "wrongP@ssw0rd"......................passed
+And Click on login button...................................................passed
+Then User could not login...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could switch between currencies [US-Euro]" name="User switch between US and Euro" time="14.278">
+<system-out><![CDATA[When User Select “Euro” from currency dropdown list.........................passed
+Then user check if action done successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could search for any product" name="User search for desired products with product name" time="12.499">
+<system-out><![CDATA[Given Type "Apple" on search text box.......................................passed
+When Click on SEARCH button.................................................passed
+Then User could find Apple products.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could search for any product" name="User search for desired products with SKU" time="12.029">
+<system-out><![CDATA[Given Type "APPLE_CAM" on search text box...................................passed
+When Click on SEARCH button.................................................passed
+Then User could find Apple product..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could select different categories and sub-category" name="Select random category then hover and open sub-Category" time="14.393">
+<system-out><![CDATA[Given Hover the header menu and select random category then hover it........passed
+When Click on random sub-category...........................................passed
+Then User could open sub-category page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could click on slider wrapper" name="Click on Nokia banner on responsive slider wrapper" time="13.253">
+<failure message="The following asserts failed:&#10;&#9;expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [http://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given Click on Nokia banner controller......................................passed
+When Click on Nokia banner..................................................passed
+Then User could click on the banner and redirect to the Nokia link..........failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [http://demo.nopcommerce.com/]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_Nokia(D06_homeSlidersStepDef.java:32)
+	at ✽.User could click on the banner and redirect to the Nokia link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="User could click on slider wrapper" name="Click on Nokia banner on responsive slider wrapper 2" time="11.975">
+<failure message="The following asserts failed:&#10;&#9;expected [https://demo.nopcommerce.com/iphone-6] but found [http://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given Click on IPhone banner controller.....................................passed
+When Click on IPhone banner.................................................passed
+Then User could click on the banner and redirect to the IPhone link.........failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/iphone-6] but found [http://demo.nopcommerce.com/]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_IPhone(D06_homeSlidersStepDef.java:54)
+	at ✽.User could click on the banner and redirect to the IPhone link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Follow us links open the corresponding URLs" name="user could open facebook" time="14.731">
+<system-out><![CDATA[When Click on facebook icon.................................................passed
+Then User could open facebook page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us links open the corresponding URLs" name="user could open twitter" time="13.722">
+<system-out><![CDATA[When Click on twitter icon..................................................passed
+Then User could open twitter page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us links open the corresponding URLs" name="user could open rss" time="14.883">
+<failure message="The following asserts failed:&#10;&#9;expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[When Click on rss icon......................................................passed
+Then User could open rss page...............................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefinitions.D07_followUsStepDef.rss_Open(D07_followUsStepDef.java:75)
+	at ✽.User could open rss page(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F07_followUs.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="Follow us links open the corresponding URLs" name="user could open youtube" time="20.943">
+<system-out><![CDATA[When Click on youtube icon..................................................passed
+Then User could open youtube page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add products to wishlist" name="User choose a product and click on Add to wishlist icon" time="18.292">
+<system-out><![CDATA[When user add product to wishlist...........................................passed
+Then after adding the product to wishlist  success message appeared.........passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add products to wishlist" name="number of wishlist items in home page is increased" time="12.496">
+<system-out><![CDATA[When user add product to wishlist...........................................passed
+Then after adding the product to wishlist  success message appeared.........passed
+And user get the of wishlist items after adding product.....................passed
+Then number of wishlist items increased.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add products to cart" name="User choose a product and click on ADD TO CART button" time="16.378">
+<system-out><![CDATA[Given Scroll down and choose a random product and click on it...............passed
+When Click on ADD TO CART button............................................passed
+Then the product is added to the user's shopping cart and message appears says The product has been added to your shopping cart.passed
+]]></system-out>
+</testcase>
+</testsuite>
