@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>13/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 15 02:11:01 EET 2022</td>
+<td>Started on:</td><td>Fri Jun 17 01:39:56 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>237 seconds (237605 ms)</td>
+<tr><td>Total time:</td><td>252 seconds (252961 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,11 +77,27 @@ function toggleAllBoxes() {
 <tr>
 <td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Nokia banner on responsive slider wrapper", "User could click on slider wrapper"</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/iphone-6] but found [http://demo.nopcommerce.com/]
+	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_IPhone(D06_homeSlidersStepDef.java:54)
+	at ?.User could click on the banner and redirect to the IPhone link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:18)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1086350168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1086350168'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [https://demo.nopcommerce.com/iphone-6] but found [http://demo.nopcommerce.com/]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_IPhone(D06_homeSlidersStepDef.java:54)
+	at ?.User could click on the banner and redirect to the IPhone link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:18)
+</pre></div></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Nokia banner on responsive slider wrapper", "User could click on slider wrapper"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
 	expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [http://demo.nopcommerce.com/]
 	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_Nokia(D06_homeSlidersStepDef.java:32)
 	at ?.User could click on the banner and redirect to the Nokia link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:11)
-... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2134681162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2134681162'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744457797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1744457797'><pre>java.lang.AssertionError: The following asserts failed:
 	expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [http://demo.nopcommerce.com/]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
@@ -89,39 +105,23 @@ function toggleAllBoxes() {
 	at ?.User could click on the banner and redirect to the Nokia link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:11)
 </pre></div></td>
 <td>13</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
 <td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open rss", "Follow us links open the corresponding URLs"</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
 	expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
 	at org.example.stepDefinitions.D07_followUsStepDef.rss_Open(D07_followUsStepDef.java:75)
 	at ?.User could open rss page(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F07_followUs.feature:17)
-... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace206999441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace206999441'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1940311161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1940311161'><pre>java.lang.AssertionError: The following asserts failed:
 	expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 	at org.example.stepDefinitions.D07_followUsStepDef.rss_Open(D07_followUsStepDef.java:75)
 	at ?.User could open rss page(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F07_followUs.feature:17)
 </pre></div></td>
-<td>14</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Nokia banner on responsive slider wrapper", "User could click on slider wrapper"</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [https://demo.nopcommerce.com/iphone-6] but found [http://demo.nopcommerce.com/]
-	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_IPhone(D06_homeSlidersStepDef.java:54)
-	at ?.User could click on the banner and redirect to the IPhone link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:18)
-... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1021311233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1021311233'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [https://demo.nopcommerce.com/iphone-6] but found [http://demo.nopcommerce.com/]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at org.example.stepDefinitions.D06_homeSlidersStepDef.slider_IPhone(D06_homeSlidersStepDef.java:54)
-	at ?.User could click on the banner and redirect to the IPhone link(file:///C:/Users/Ahmed/IdeaProjects/E-commerce-App-Automation-Testing-Project/src/main/resources/features/F06_homeSliders.feature:18)
-</pre></div></td>
-<td>11</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>16</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -131,70 +131,70 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select random category then hover and open sub-Category", "User could select different categories and sub-category"</td>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User choose a product and click on ADD TO CART button", "User could add products to cart"</td>
 <td></td>
-<td>14</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User switch between US and Euro", "User could switch between currencies [US-Euro]"</td>
-<td></td>
-<td>14</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User register with valid data", "User could register with valid data"</td>
-<td></td>
-<td>18</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "number of wishlist items in home page is increased", "User could add products to wishlist"</td>
-<td></td>
-<td>12</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search for desired products with SKU", "User could search for any product"</td>
-<td></td>
-<td>12</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with valid credentials", "User could login with credentials"</td>
-<td></td>
-<td>14</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>17</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
 <td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open twitter", "Follow us links open the corresponding URLs"</td>
 <td></td>
-<td>13</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>14</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with invalid credentials", "User could login with credentials"</td>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "number of wishlist items in home page is increased", "User could add products to wishlist"</td>
 <td></td>
 <td>13</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open youtube", "Follow us links open the corresponding URLs"</td>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search for desired products with SKU", "User could search for any product"</td>
 <td></td>
-<td>20</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
-<tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search for desired products with product name", "User could search for any product"</td>
-<td></td>
-<td>12</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>19</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
 <td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open facebook", "Follow us links open the corresponding URLs"</td>
 <td></td>
-<td>14</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>17</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
-<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User choose a product and click on ADD TO CART button", "User could add products to cart"</td>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User search for desired products with product name", "User could search for any product"</td>
 <td></td>
-<td>16</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>14</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User switch between US and Euro", "User could switch between currencies [US-Euro]"</td>
+<td></td>
+<td>18</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 <tr>
 <td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User choose a product and click on Add to wishlist icon", "User could add products to wishlist"</td>
 <td></td>
+<td>12</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could open youtube", "Follow us links open the corresponding URLs"</td>
+<td></td>
 <td>18</td>
-<td>org.example.runners.TestRunner@25af5db5</td></tr>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with valid credentials", "User could login with credentials"</td>
+<td></td>
+<td>15</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login with invalid credentials", "User could login with credentials"</td>
+<td></td>
+<td>16</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select random category then hover and open sub-Category", "User could select different categories and sub-category"</td>
+<td></td>
+<td>13</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
+<tr>
+<td title='org.example.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.example.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User register with valid data", "User could register with valid data"</td>
+<td></td>
+<td>17</td>
+<td>org.example.runners.TestRunner@42d8062c</td></tr>
 </table><p>
 </body>
 </html>

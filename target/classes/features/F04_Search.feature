@@ -5,14 +5,11 @@ Feature: User could search for any product
 
   Scenario: User search for desired products with product name
 
-    Given Type "Apple" on search text box
-    When Click on SEARCH button
+    When User Search For Apple Products in the Search field
 
     Then User could find Apple products
 
   Scenario: User search for desired products with SKU
 
-    Given Type "APPLE_CAM" on search text box
-    When Click on SEARCH button
-
-    Then User could find Apple product
+    When User Search For Products With Sku in the Search field
+    Then Product With the Same Sku is Displayed

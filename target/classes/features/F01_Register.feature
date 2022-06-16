@@ -11,7 +11,7 @@ Feature: User could register with valid data
     When Click on any radio button to chose gender
     And User enter First name and Last name
     And User Select Date of Birth: Select [Day, Month, Year]
-    And User enter email: "Ahmedsherif@test.com"
+    And User enter email: "Ahmedsherif1@test.com"
     #Company Details
     And Fill Company name
     #Your Password
